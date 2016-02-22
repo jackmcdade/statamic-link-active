@@ -17,7 +17,6 @@ class LinkActiveTags extends Tags
      */
     public function index()
     {
-        $current_url = URL::getCurrent();
         $url = Stringy::ensureLeft($this->get('url'), '');
 
         $html = " href='{$url}'";
